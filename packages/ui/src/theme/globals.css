@@ -1,0 +1,41 @@
+:root {
+  --df-bg: #070b12;
+  --df-surface: rgba(16, 28, 48, 0.58);
+  --df-border: rgba(148, 186, 255, 0.24);
+  --df-text-primary: #e9f2ff;
+  --df-text-muted: #8ea7cc;
+  --df-positive: #3be8b0;
+  --df-negative: #ff6d8f;
+  --df-liquid-start: #02c0ff;
+  --df-liquid-end: #3be8b0;
+  --df-liquid-accent: #87a8ff;
+  --df-font-display: 'Sora', 'Avenir Next', sans-serif;
+  --df-font-data: 'IBM Plex Mono', 'SF Mono', monospace;
+  --df-font-body: 'Manrope', 'Avenir Next', sans-serif;
+}
+
+.dark,
+[data-theme='dark'] {
+  color-scheme: dark;
+  background:
+    radial-gradient(1200px circle at 5% -20%, rgba(2, 192, 255, 0.2), transparent 55%),
+    radial-gradient(900px circle at 95% 15%, rgba(59, 232, 176, 0.18), transparent 50%),
+    var(--df-bg);
+  color: var(--df-text-primary);
+  font-family: var(--df-font-body);
+}
+
+.df-data-text {
+  font-family: var(--df-font-data);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.df-glass {
+  border: 1px solid var(--df-border);
+  background: linear-gradient(130deg, rgba(255, 255, 255, 0.12), var(--df-surface));
+  backdrop-filter: blur(18px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 22px 40px rgba(3, 10, 22, 0.55);
+}
