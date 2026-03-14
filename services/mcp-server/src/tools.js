@@ -53,14 +53,41 @@ async function marketDataFetch(input = {}) {
     const supabase = createServerClient();
     const {
       benchmark = null,
+      provider = null,
+      symbol = null,
       fromDate = null,
       toDate = null,
       limit = 100,
       assetId = null,
     } = input;
 
-    if (!benchmark && !assetId) {
-      throw new Error('Provide either benchmark or assetId');
+    if (!benchmark && !assetId && !provider) {
+      throw new Error('Provide one of benchmark, assetId, or provider');
+    }
+
+    if (provider) {
+      let query = supabase
+        .from('market_price_snapshots')
+        .select(
+          'provider,symbol,instrument_type,as_of,open_price,high_price,low_price,close_price,volume,metadata',
+        )
+        .order('as_of', { ascending: false })
+        .limit(Math.min(500, Math.max(1, Number(limit) || 100)))
+        .eq('provider', provider);
+
+      if (symbol) query = query.eq('symbol', symbol);
+      if (fromDate) query = query.gte('as_of', fromDate);
+      if (toDate) query = query.lte('as_of', toDate);
+
+      const { data, error } = await query;
+      if (error) throw error;
+
+      return ok(tool, {
+        type: 'provider',
+        provider,
+        symbol,
+        rows: data || [],
+      });
     }
 
     if (benchmark) {

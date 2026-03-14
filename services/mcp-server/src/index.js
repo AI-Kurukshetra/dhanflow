@@ -12,6 +12,14 @@ const {
   clientLookup,
   goalProjection,
 } = require('./tools');
+const {
+  fetchMarketDataByProvider,
+  createSebiAuditLog,
+  createAdvisorComplianceAlert,
+  createRegulatoryReportingRun,
+  createDocumentVersion,
+  shareClientDocument,
+} = require('./integrations');
 const { startMcpServer } = require('./server');
 
 module.exports = {
@@ -25,6 +33,12 @@ module.exports = {
   riskSimulation,
   clientLookup,
   goalProjection,
+  fetchMarketDataByProvider,
+  createSebiAuditLog,
+  createAdvisorComplianceAlert,
+  createRegulatoryReportingRun,
+  createDocumentVersion,
+  shareClientDocument,
   startMcpServer,
 };
 

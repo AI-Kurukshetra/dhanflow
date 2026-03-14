@@ -27,6 +27,13 @@ Payload format:
 
 Each tool queries Supabase and returns structured JSON.
 
+`market_data_fetch` now supports provider sources:
+- `nse`
+- `bse`
+- `mutual_funds`
+- `etf`
+- `crypto`
+
 ## Utility routes
 
 - `GET /health`
