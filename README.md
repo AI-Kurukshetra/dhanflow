@@ -1,38 +1,46 @@
 # Dhanflow
 
-Dhanflow is a fintech platform monorepo bootstrapped with **Turborepo** and managed with **pnpm**.
+Dhanflow is a scalable fintech monorepo bootstrapped with **Turborepo** and managed by **pnpm**.
 
-## Monorepo layout
+## Tech stack
 
-- `apps/web`: Public marketing website and onboarding entrypoint.
-- `apps/advisor-portal`: Advisor-facing dashboard and workflows.
-- `apps/client-portal`: Client-facing portfolio and transaction experience.
-- `services/ai-agent`: AI orchestration service for advisory insights and automation.
-- `services/mcp-server`: MCP service for tool integration and context routing.
-- `packages/ui`: Shared UI components and design primitives.
-- `packages/config`: Shared config presets (lint, TypeScript, build conventions).
-- `packages/utils`: Shared cross-domain utility functions.
-- `infra/docker`: Containerization and local orchestration assets.
-- `infra/vercel`: Vercel deployment and environment notes.
-- `prompts`: Prompt templates and agent workflows.
+- Frontend: Next.js 16, React 19, TypeScript
+- UI: TailwindCSS, ShadCN pattern support, Framer Motion, Three.js
+- Backend: Supabase, PostgreSQL, Edge Functions
+- AI: OpenAI API
 
-## Tooling
+## Monorepo architecture
 
-- Monorepo orchestration: Turborepo (`turbo.json`)
-- Package management: pnpm (`pnpm-workspace.yaml`)
+- `apps/web`: Public web app and onboarding funnel.
+- `apps/advisor-portal`: Advisor workflows, insights, and operations.
+- `apps/client-portal`: Client dashboard, portfolio views, and actions.
+- `services/ai-agent`: AI orchestration and LLM workflows.
+- `services/mcp-server`: MCP integrations and tool routing service.
+- `packages/ui`: Shared UI primitives and component contracts.
+- `packages/config`: Shared base configs for ESLint, Prettier, Tailwind, and TypeScript.
+- `packages/utils`: Shared business and platform utilities.
+- `infra/docker`: Container and local environment assets.
+- `infra/vercel`: Deployment and environment mapping for Vercel.
+- `prompts`: Prompt templates for internal AI workflows.
 
-## Getting started
+## Base configuration
 
-```bash
-pnpm install
-pnpm dev
-```
+- ESLint: `packages/config/eslint/*`
+- Prettier: `packages/config/prettier/base.cjs`
+- TypeScript: `packages/config/typescript/*`
+- Tailwind: `packages/config/tailwind/base.cjs`
 
-## Typical commands
+## Turborepo pipelines
+
+- `dev`: non-cached persistent processes for local development.
+- `build`: cacheable builds with dependency ordering.
+- `lint`: lint across workspaces with dependency ordering.
+- `typecheck`: type checks across workspaces.
+
+## Workspace scripts
 
 ```bash
 pnpm dev
 pnpm build
 pnpm lint
-pnpm typecheck
 ```

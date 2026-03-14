@@ -3,9 +3,12 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "dev": "echo \"mcp-server dev\"",
-    "build": "echo \"mcp-server build\"",
-    "lint": "echo \"mcp-server lint\"",
-    "typecheck": "echo \"mcp-server typecheck\""
+    "dev": "node ./src/index.js",
+    "build": "echo \"build mcp-server\"",
+    "lint": "echo \"lint mcp-server\"",
+    "typecheck": "echo \"typecheck mcp-server\""
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.8"
   }
 }

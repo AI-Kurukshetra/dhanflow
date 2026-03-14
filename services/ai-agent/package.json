@@ -3,9 +3,12 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "dev": "echo \"ai-agent dev\"",
-    "build": "echo \"ai-agent build\"",
-    "lint": "echo \"ai-agent lint\"",
-    "typecheck": "echo \"ai-agent typecheck\""
+    "dev": "node ./src/index.js",
+    "build": "echo \"build ai-agent\"",
+    "lint": "echo \"lint ai-agent\"",
+    "typecheck": "echo \"typecheck ai-agent\""
+  },
+  "dependencies": {
+    "openai": "^5.18.1"
   }
 }

@@ -2,9 +2,20 @@
   "name": "@dhanflow/config",
   "private": true,
   "version": "0.1.0",
+  "files": [
+    "eslint",
+    "prettier",
+    "tailwind",
+    "typescript"
+  ],
   "scripts": {
     "build": "echo \"config build\"",
     "lint": "echo \"config lint\"",
     "typecheck": "echo \"config typecheck\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
+    "eslint-config-prettier": "^10.1.2"
   }
 }
