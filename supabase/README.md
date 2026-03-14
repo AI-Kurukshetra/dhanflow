@@ -15,6 +15,7 @@ This folder contains Supabase schema migrations for Dhanflow.
 
 - `migrations/20260314154000_init_backend.sql`
 - `migrations/20260314162000_crm_features.sql`
+- `migrations/20260314170000_portfolio_engine.sql`
 
 ## Local workflow
 
