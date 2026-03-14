@@ -5,8 +5,14 @@ const {
   scheduleMeeting,
   logCommunication,
 } = require('./crm');
-
-console.log('mcp-server service bootstrap (CRM ready)');
+const {
+  marketDataFetch,
+  portfolioAnalysis,
+  riskSimulation,
+  clientLookup,
+  goalProjection,
+} = require('./tools');
+const { startMcpServer } = require('./server');
 
 module.exports = {
   getClientProfile,
@@ -14,4 +20,15 @@ module.exports = {
   createTask,
   scheduleMeeting,
   logCommunication,
+  marketDataFetch,
+  portfolioAnalysis,
+  riskSimulation,
+  clientLookup,
+  goalProjection,
+  startMcpServer,
 };
+
+if (require.main === module) {
+  console.log('mcp-server service bootstrap (tool server ready)');
+  startMcpServer();
+}
