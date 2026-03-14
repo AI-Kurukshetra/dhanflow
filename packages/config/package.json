@@ -11,7 +11,8 @@
   "scripts": {
     "build": "echo \"config build\"",
     "lint": "echo \"config lint\"",
-    "typecheck": "echo \"config typecheck\""
+    "typecheck": "echo \"config typecheck\"",
+    "test": "echo \"config tests pending\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.30.1",

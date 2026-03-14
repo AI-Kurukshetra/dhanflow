@@ -6,3 +6,5 @@ build
 .env
 .env.*
 .DS_Store
+.next
+*.tsbuildinfo

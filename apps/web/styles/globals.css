@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-body: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", "Menlo", monospace;
+  --bg-base: #060b14;
+  --bg-panel: rgba(10, 20, 38, 0.56);
+  --bg-panel-strong: rgba(10, 22, 43, 0.76);
+  --text-main: #ecf5ff;
+  --text-muted: #96adcf;
+  --accent-a: #00b8ff;
+  --accent-b: #39e8b6;
+  --accent-c: #8cb8ff;
+  --danger: #ff728f;
+  --success: #3ceeb3;
+}
+
+* {
+  border-color: rgba(148, 186, 255, 0.15);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--text-main);
+  background:
+    radial-gradient(1000px 500px at 5% -15%, rgba(0, 184, 255, 0.2), transparent 60%),
+    radial-gradient(900px 500px at 92% 8%, rgba(57, 232, 182, 0.18), transparent 56%),
+    radial-gradient(800px 600px at 50% 120%, rgba(140, 184, 255, 0.12), transparent 58%),
+    var(--bg-base);
+}
+
+.fin-grid {
+  background-image:
+    linear-gradient(rgba(142, 167, 204, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(142, 167, 204, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(140, 184, 255, 0.4) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(140, 184, 255, 0.4);
+  border-radius: 999px;
+}

@@ -6,7 +6,8 @@
     "dev": "node ./src/index.js",
     "build": "echo \"build ai-agent\"",
     "lint": "echo \"lint ai-agent\"",
-    "typecheck": "echo \"typecheck ai-agent\""
+    "typecheck": "echo \"typecheck ai-agent\"",
+    "test": "echo \"ai-agent tests pending\""
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.8",

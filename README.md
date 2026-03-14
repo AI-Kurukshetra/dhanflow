@@ -43,4 +43,15 @@ Dhanflow is a scalable fintech monorepo bootstrapped with **Turborepo** and mana
 pnpm dev
 pnpm build
 pnpm lint
+pnpm test
 ```
+
+## Deployment and CI
+
+- CI/CD workflow: `.github/workflows/ci-cd.yml`
+- Deployment target: Vercel (recommended root directory: `apps/web`)
+- Required environment variables:
+  - `NEXT_PUBLIC_SUPABASE_URL`
+  - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+  - `SUPABASE_SERVICE_ROLE_KEY`
+  - `OPENAI_API_KEY`

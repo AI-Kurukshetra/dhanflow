@@ -6,7 +6,8 @@
     "dev": "node ./src/index.js",
     "build": "echo \"build mcp-server\"",
     "lint": "echo \"lint mcp-server\"",
-    "typecheck": "echo \"typecheck mcp-server\""
+    "typecheck": "echo \"typecheck mcp-server\"",
+    "test": "echo \"mcp-server tests pending\""
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.8"

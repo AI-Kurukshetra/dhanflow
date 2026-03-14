@@ -5,6 +5,7 @@
   "scripts": {
     "build": "echo \"utils build\"",
     "lint": "echo \"utils lint\"",
-    "typecheck": "echo \"utils typecheck\""
+    "typecheck": "echo \"utils typecheck\"",
+    "test": "echo \"utils tests pending\""
   }
 }

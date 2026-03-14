@@ -7,7 +7,8 @@
   "scripts": {
     "build": "echo \"ui build\"",
     "lint": "echo \"ui lint\"",
-    "typecheck": "echo \"ui typecheck\""
+    "typecheck": "echo \"ui typecheck\"",
+    "test": "echo \"ui tests pending\""
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",

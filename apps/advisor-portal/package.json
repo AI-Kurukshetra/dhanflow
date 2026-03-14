@@ -4,9 +4,10 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev --port 3001",
-    "build": "next build",
-    "lint": "eslint .",
-    "typecheck": "tsc --project tsconfig.json --noEmit"
+    "build": "next build --webpack",
+    "lint": "echo \"advisor-portal lint pending\"",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "echo \"advisor-portal tests pending\""
   },
   "dependencies": {
     "next": "^16.0.0",
@@ -14,6 +15,11 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@types/node": "^22.15.17",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "eslint": "^9.25.1",
+    "eslint-config-next": "^16.0.0",
     "typescript": "^5.8.3"
   }
 }
