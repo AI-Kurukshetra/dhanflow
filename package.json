@@ -1,0 +1,16 @@
+{
+  "name": "dhanflow",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Dhanflow fintech monorepo powered by Turborepo and pnpm",
+  "packageManager": "pnpm@10.30.2",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.5"
+  }
+}

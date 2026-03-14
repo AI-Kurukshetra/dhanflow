@@ -1,0 +1,11 @@
+{
+  "name": "@dhanflow/web",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"web dev\"",
+    "build": "echo \"web build\"",
+    "lint": "echo \"web lint\"",
+    "typecheck": "echo \"web typecheck\""
+  }
+}

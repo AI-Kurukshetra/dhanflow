@@ -1,0 +1,10 @@
+{
+  "name": "@dhanflow/ui",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "echo \"ui build\"",
+    "lint": "echo \"ui lint\"",
+    "typecheck": "echo \"ui typecheck\""
+  }
+}

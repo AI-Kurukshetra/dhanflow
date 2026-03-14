@@ -1,0 +1,10 @@
+{
+  "name": "@dhanflow/config",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "echo \"config build\"",
+    "lint": "echo \"config lint\"",
+    "typecheck": "echo \"config typecheck\""
+  }
+}

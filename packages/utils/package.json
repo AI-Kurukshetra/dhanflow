@@ -1,0 +1,10 @@
+{
+  "name": "@dhanflow/utils",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "echo \"utils build\"",
+    "lint": "echo \"utils lint\"",
+    "typecheck": "echo \"utils typecheck\""
+  }
+}

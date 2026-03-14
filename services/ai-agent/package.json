@@ -1,0 +1,11 @@
+{
+  "name": "@dhanflow/ai-agent",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"ai-agent dev\"",
+    "build": "echo \"ai-agent build\"",
+    "lint": "echo \"ai-agent lint\"",
+    "typecheck": "echo \"ai-agent typecheck\""
+  }
+}

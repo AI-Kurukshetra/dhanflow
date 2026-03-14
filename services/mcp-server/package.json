@@ -1,0 +1,11 @@
+{
+  "name": "@dhanflow/mcp-server",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"mcp-server dev\"",
+    "build": "echo \"mcp-server build\"",
+    "lint": "echo \"mcp-server lint\"",
+    "typecheck": "echo \"mcp-server typecheck\""
+  }
+}

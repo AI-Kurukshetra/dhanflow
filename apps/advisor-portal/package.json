@@ -1,0 +1,11 @@
+{
+  "name": "@dhanflow/advisor-portal",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"advisor-portal dev\"",
+    "build": "echo \"advisor-portal build\"",
+    "lint": "echo \"advisor-portal lint\"",
+    "typecheck": "echo \"advisor-portal typecheck\""
+  }
+}
