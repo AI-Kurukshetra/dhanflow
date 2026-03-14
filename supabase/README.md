@@ -9,10 +9,12 @@ This folder contains Supabase schema migrations for Dhanflow.
 - Row Level Security (RLS) across business tables
 - Supabase Storage private bucket for client documents
 - Performance indexes for client listing, transaction history, and portfolio performance queries
+- CRM extensions for client profiles, relationship mapping, pipeline, tasks, meetings, and communication logs
 
 ## Migrations
 
 - `migrations/20260314154000_init_backend.sql`
+- `migrations/20260314162000_crm_features.sql`
 
 ## Local workflow
 
