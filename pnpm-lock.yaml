@@ -127,6 +127,9 @@ importers:
 
   services/ai-agent:
     dependencies:
+      '@supabase/supabase-js':
+        specifier: ^2.49.8
+        version: 2.99.1
       openai:
         specifier: ^5.18.1
         version: 5.23.2(ws@8.19.0)

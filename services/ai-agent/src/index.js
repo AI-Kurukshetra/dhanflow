@@ -5,8 +5,8 @@ const {
   getBenchmarkComparison,
   createGoalProjection,
 } = require('./portfolioEngine');
-
-console.log('ai-agent service bootstrap (portfolio engine ready)');
+const { runAiAdvisorWorkflow } = require('./advisorService');
+const { startAiAdvisorServer } = require('./apiServer');
 
 module.exports = {
   calculatePortfolioAnalytics,
@@ -14,4 +14,11 @@ module.exports = {
   getPortfolioDashboard,
   getBenchmarkComparison,
   createGoalProjection,
+  runAiAdvisorWorkflow,
+  startAiAdvisorServer,
 };
+
+if (require.main === module) {
+  console.log('ai-agent service bootstrap (AI advisor ready)');
+  startAiAdvisorServer();
+}
